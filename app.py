@@ -4,7 +4,6 @@ import pandas as pd
 import os
 import sys
 import librosa
-import librosa.display
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, OneHotEncoder

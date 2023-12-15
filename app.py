@@ -114,7 +114,7 @@ def main():
 
 
     members_info = [
-    {"Name": "Taher Travedi", "Photo": "https://i.postimg.cc/Qxt91zLD/Taher.jpg", "Email": "ttravadi@ucdavis.edu", "LinkedIn": "https://www.linkedin.com/in/taher-travadi/"},
+    {"Name": "Taher Travadi", "Photo": "https://i.postimg.cc/Qxt91zLD/Taher.jpg", "Email": "ttravadi@ucdavis.edu", "LinkedIn": "https://www.linkedin.com/in/taher-travadi/"},
     {"Name": "Nikita B. Emberi", "Photo": "https://i.postimg.cc/QNKBFBvb/Nikita-ML.jpg", "Email": "nemberi@ucdavis.edu", "LinkedIn": "https://www.linkedin.com/in/nikitaemberi/"},
     {"Name": "Savali Deshmukh", "Photo": "https://i.postimg.cc/jSYwysy7/savali-ML.jpg", "Email": "sdeshmukh@ucdavis.edu", "LinkedIn": "https://www.linkedin.com/in/savali-d-2092611a6/"},
     ]
@@ -128,7 +128,8 @@ def main():
             st.subheader(member_info["Name"])
             st.image(member_info['Photo'], caption=member_info['Name'], use_column_width=True)
             st.write(f"Email: {member_info['Email']}")
-            st.write(f"LinkedIn: {member_info['LinkedIn']}")
+            url = member_info["LinkedIn"]
+            st.write("linkedIn: [link](%s)" % url)
 
     footer = """
     <style>

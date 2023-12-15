@@ -6,4 +6,4 @@ librosa==0.10.1
 tensorflow==2.15.0
 keras==2.15.0
 keras_multi_head==0.29.0
-sklearn
+gdown
